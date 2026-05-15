@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+<main>
+
+    <h1>Contacting Us</h1>
+
+    <div id="container">
+
+        <p>
+            If you need more information about the Cliffs, Hours of Operations,
+            Facilities or questions about this site, please contact us by using
+            one of the following:
+        </p>
+
+        <h2>Phone</h2>
+        <p>(800) GCLIFFS</p>
+
+        <h2>Email</h2>
+        <p>info@greatcliffs.com</p>
+
+        <h2>Fill Out the Form</h2>
+
+        <form action="/contact" method="post">
+
+            <fieldset>
+
+                <legend>Contact Form</legend>
+
+                <label>Enter your full name</label><br>
+                <input type="text" name="name"><br><br>
+
+                <label>Enter your email</label><br>
+                <input type="email" name="email"><br><br>
+
+                <label>Enter your phone</label><br>
+                <input type="text" name="phone"><br><br>
+
+                <label>How should we contact you?</label><br>
+
+                <input type="radio" name="contact" value="email"> Email
+                <input type="radio" name="contact" value="phone"> Phone
+                <br><br>
+
+                <label>Which Cliff are you inquiring about?</label><br>
+
+                <select name="cliff">
+                    <option>West Cliff</option>
+                    <option>North Cliff</option>
+                    <option>East Cliff</option>
+                    <option>South Cliff</option>
+                </select>
+
+                <br><br>
+
+                <label>How did you hear about us?</label><br>
+
+                <textarea rows="3" cols="20"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Inquire">
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</main>
+
+</body>
+</html>
