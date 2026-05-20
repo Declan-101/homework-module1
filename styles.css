@@ -11,11 +11,13 @@
         }
         #activities header {
             background: no-repeat lightgrey url('images/runfly.jpg');
-            background-size: 1500px
+            background-size: 1500px;
+            background-position: center;
         }
         #contact header {
             background: no-repeat lightgrey url('images/cliff_rock.jpg');
-            background-size: 1500px
+            background-size: 1500px;
+            background-position: center;
         }
         .main-header {
             background-color:rgba(225, 225, 225, 0.8);
@@ -131,23 +133,6 @@
         width: 15px;
         text-align: center;
         text-decoration: none;
-        margin: 0 4px;
-        border-radius: 50%;
-        }
-        footer #nondisclaimer .social .fa:hover {
-            opacity: 0.7;
-        }
-        footer #nondisclaimer .social .fa-facebook-f {
-            background: #3B5998;
-            color: white;
-        }
-        footer #nondisclaimer .social .fa-instagram {
-            background: #55ACEE;
-            color: white;
-        }
-        footer #nondisclaimer .social .fa-twitter {
-            background: #125688;
-            color: white;
         }
         /*activities*/
         table {
@@ -264,4 +249,98 @@
 
 #contact input[type="submit"]:hover {
     background-color: #9ed034;
+}
+/* CLIFFS PAGE */
+
+#cliffs header {
+    background: no-repeat lightgrey url('images/forest_cliff.jpg');
+    background-size: 1500px;
+    background-position: center;
+}
+
+#cliffs main {
+    width: 1200px;
+    margin: 2em auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cliffs h1 {
+    font-size: 32px;
+    color: #9ed034;
+    margin-bottom: 1em;
+}
+
+#cliffs p {
+    line-height: 1.8;
+    margin-bottom: 2em;
+}
+
+/* Cliff Sections */
+
+.cliff {
+    margin-bottom: 4em;
+}
+
+.cliff img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cliff h2 {
+    color: #4977D1;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cliff p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Optional hover effect */
+
+.cliff img:hover {
+    opacity: 0.9;
+}
+
+/* CLIFF GALLERY */
+
+.cliff-gallery {
+    width: 1100px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #eef7ff;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.cliff-card {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+}
+
+.cliff-card h2 {
+    color: #1d4f91;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.cliff-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    border: 4px solid #d9ecff;
 }
