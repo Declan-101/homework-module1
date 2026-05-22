@@ -344,3 +344,40 @@
 
     border: 4px solid #d9ecff;
 }
+
+/* Clock Display Area */
+
+#timeofday {
+    width: 100%;
+    height: 70px;
+
+    background-image:
+    linear-gradient(
+        0deg,
+        rgba(251,215,139,1) 0%, 
+        rgba(118,213,245,1) 100%
+        );
+    url("images/cliff-ocean.jpg");
+
+    background-size: 100% 70px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+#YourCurrentLocalTime {
+    padding-bottom: 25px;
+    padding-inline: 5px;
+    color: #3a3a3a
+}
+#clock {
+    padding-bottom: 25px;
+    color: #125688
+}
