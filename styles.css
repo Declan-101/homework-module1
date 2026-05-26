@@ -1,64 +1,383 @@
- <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Fourth Web Page</title>
+ /* Header */
+        header {
+           width: 100%;
+           min-height: 400px;
+           padding-top: 3em; 
+        }
+        #home header {
+            background: no-repeat lightgrey url('images/great cliffs.jpg');
+            background-size: 1500px;
+            background-position: center;
+        }
+        #activities header {
+            background: no-repeat lightgrey url('images/runfly.jpg');
+            background-size: 1500px;
+            background-position: center;
+        }
+        #contact header {
+            background: no-repeat lightgrey url('images/cliff_rock.jpg');
+            background-size: 1500px;
+            background-position: center;
+        }
+        .main-header {
+            background-color:rgba(225, 225, 225, 0.8);
+            width: 700px;
+            margin: 2em auto 0 auto;
+            min-height: 100px;
+            height: 100px;
+        }
+        .main-header .logo img {
+            width: 100px;
+            height: 100px;
+            margin: 0 2em 0 0;
+            float: left;
+        }
+        /* Navigation*/
+        .main-menu {
+            margin-left: 225px;
+            font-weight: 400;
+        }
+        .main-menu ul li {
+            list-style-type: none;
+            display: inline-block;
+            float: left;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-left: 1px solid rgba(202, 204, 202, 0.6);
+            line-height: 100px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .main-menu ul li a {
+            text-decoration: none;
+            color: #888;
+        }
+        .main-menu ul li a:hover {
+            color: #9ed034;
+        }
+        .main-menu ul li.active {
+            background-color: #9ed034;
+            border: none;
+        }
+        .main-menu ul li.active a {
+            color: #fff;
+        }
+        /* Main */
+        main {
+            width: 1150px;
+            margin: 2em auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main h1 {
+            font-size: 28px;
+            color: #9ed034;
+        }
+        /* partners */
+        section {
+            width: 100%;
+            background-color: #4288c3;
+        }
+        section #partners {
+            width: 1200px;
+            padding: 2em 0 2em 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        section #partners .partner {
+            display: inline-block;
+            margin: 0 0.75em;
+            padding: 1.3em 1.5em;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        section #partners .partner img {
+            width: 90px;
+            height: 90px;
+        }
+        /* Footer */
+        footer {
+        width: 100%;
+        height: 155px;
+        padding-bottom: 1em;
+        background-color: #ecfab8;
+        }
+        footer #nondisclaimer .copy {
+            padding: 3.5em 3.5em 3.5em 13em;
+            float: left;
+            font-size: 0.9em;
+        }
+        footer #nondisclaimer .social {
+            padding: 2.5em;
+            margin-right: 9.25em;
+            float: right;
+        }
+        footer #disclaimer {
+            clear: both;
+        }
+        footer #disclaimer p {
+            font-size: 0.85em;
+            text-align: center;
+        }
+        footer #nondisclaimer .social a {
+            text-decoration: none;
+            color: #000;
+            font-size: 28px;
+            margin-left: 15px;
+        }
+        footer #nondisclaimer .social a:hover {
+            color: #4288c3;
+        }
+        footer #nondisclaimer .social .fa {
+        padding: 15px;
+        font-size: 15px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        }
+        /*activities*/
+        table {
+            width: 1000px;
+            margin: 4em auto 0 auto;
+        }
+        caption {
+            background: #852b1b;
+            height: 40px;
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding-top: 1em;        
+        }
+        thead {
+            background: #bde1ff;
+        }
+        tbody {
+            background: #EEFFE6;
+            text-align: center;
+        }
+        th,td {
+            width: 225px;
+            height: 75px;
+            vertical-align: middle;
+            border: solid 1px #852B1B;
+        }
+        th:first-child {
+            width: 125px;
+            height: 50px;
+            background: #4977D1
+        }
+        td:first-child {
+            font-weight: bold;
+            background: #BDE1FF
+        }
+        /* CONTACT PAGE */
 
-            <link rel="stylesheet" href="style.css">    
-            
-    </head>
-    <body>
-<!-- Container to wrap everything -->
-        <div id="container">
+#contact main {
+    width: 800px;
+}
 
-<!--brand of website -->
-            <header style="font-size: 60px; color: #fff;">My Web Site Brand</header>
-            <!-- main navigation -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="page2.html">About</a></li>
-                    <li><a href="page4.html">Gallery</a></li>
-                    <li><a href="page3.html">Contact</a></li>
-                </ul>
-            </nav> <!-- End Main Navigation-->
-                
-            <!-- Main Content-->
-        <main>
-        <h1>My Fourth Heading</h1>
-        <p>My Fourth paragraph.</p>
-        <ul id="album">
-            <!--<li id="photo"><img src="images 2/winterland1.jpg"></li>
-            <li id="photo"><img src="images 2/winterland2.jpg"></li>
-            <li id="photo"><img src="images 2/winterland3.jpg"></li>
-            <li id="photo"><img src="images 2/winterland4.jpg"></li>
-            <li id="photo"><img src="images 2/winterland5.jpg"></li>
-            <li id="photo"><img src="images 2/winterland6.jpg"></li>-->
-        </ul>
-        </main> <!-- End Main Content-->
+#contact h1 {
+    color: #9ed034;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
 
-        <!-- Footer Information-->
-        <footer>&copy; Copyright 2020</footer>
+#contact p {
+    line-height: 1.5;
+}
 
-        </div> <!-- End Container -->
+/* Form Box */
+#contact form {
+    margin-top: 20px;
+}
 
-        <script>
-            var photos = []; //Declare an empty array to store image element
-            var fileNames = []; //Declare an empty element to store image file names
-            var imageList = []; //Declare an empty array to store html list that contain an image
-            var image; //Declare an empty variable to store the assembled image list codes
-            var openList = "<li id='photo'>"; //Declare a variable to contain open list tag
-            var closeList = "</li>"; //Declare a variable to contain close list tag
+#contact fieldset {
+    border: 1px solid #9ed034;
+    padding: 20px;
+}
 
-            //Create a loop to create 6 images starting with the index of 0
-            for (var i=0; i<10; i++) {
-                fileNames.push( "winterland"+(i+1)); //Create image file name and store in the array
-                photos.push("<img src='images 2/"+fileNames[i]+".jpg'>"); //Assemble file name into image elements and store in an array
-                image = openList + photos[i] + closeList; //Assemble image element from array with list elements and store in a variable
-                imageList.push(image); //Store(push) the assembled list codes into an array
-            }
-            //display all six image codes stored in the array
-            document.getElementById("album").innerHTML = imageList;
-        </script>
+/* Legend */
+#contact legend {
+    color: #4977D1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
-    </body>
-</html>
+/* Labels */
+#contact label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Text Inputs */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #999;
+}
+
+/* Textarea */
+#contact textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Radio Buttons */
+#contact input[type="radio"] {
+    margin-top: 10px;
+}
+
+/* Dropdown */
+#contact select {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/* Submit Button */
+#contact input[type="submit"] {
+    background-color: #4977D1;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #9ed034;
+}
+/* CLIFFS PAGE */
+
+#cliffs header {
+    background: no-repeat lightgrey url('images/forest_cliff.jpg');
+    background-size: 1500px;
+    background-position: center;
+}
+
+#cliffs main {
+    width: 1200px;
+    margin: 2em auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cliffs h1 {
+    font-size: 32px;
+    color: #9ed034;
+    margin-bottom: 1em;
+}
+
+#cliffs p {
+    line-height: 1.8;
+    margin-bottom: 2em;
+}
+
+/* Cliff Sections */
+
+.cliff {
+    margin-bottom: 4em;
+}
+
+.cliff img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cliff h2 {
+    color: #4977D1;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cliff p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Optional hover effect */
+
+.cliff img:hover {
+    opacity: 0.9;
+}
+
+/* CLIFF GALLERY */
+
+.cliff-gallery {
+    width: 1100px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #eef7ff;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.cliff-card {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+}
+
+.cliff-card h2 {
+    color: #1d4f91;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.cliff-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    border: 4px solid #d9ecff;
+}
+
+/* Clock Display Area */
+
+#timeofday {
+    width: 100%;
+    height: 70px;
+
+    background-image:
+    linear-gradient(
+        0deg,
+        rgba(251,215,139,1) 0%, 
+        rgba(118,213,245,1) 100%
+        );
+    url("images/cliff-ocean.jpg");
+
+    background-size: 100% 70px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+#YourCurrentLocalTime {
+    padding-bottom: 25px;
+    padding-inline: 5px;
+    color: #3a3a3a
+}
+#clock {
+    padding-bottom: 25px;
+    color: #125688
+}
