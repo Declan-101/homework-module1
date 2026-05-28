@@ -84,8 +84,14 @@
         <textarea></textarea>
     </div>
 
+    <!--Random Codes-->
+    <div class="randomcode">
+        <input type="text" name="randomcode" placeholder="Enter characters">
+        <p id="codes"></p>
+    </div>
+
     <div class="button">
-        <input type="submit" value="Inquire">
+        <input type="submit" id="submit" value="Inquire">
     </div> 
 </fieldset>  
 </form>
@@ -128,38 +134,8 @@
                 <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
             </div>
         </footer>
-        <script>
-
-    var photos = [];
-    var fileNames = [];
-    var imageList = [];
-    var image;
-    var openList = "<li class='partner'>";
-    var closeList = "</li>";
-
-    // Store image file names
-    fileNames[0] = "partner-bustour.png";
-    fileNames[1] = "partner-cabinrental.png";
-    fileNames[2] = "partner-campingadv.png";
-    fileNames[3] = "partner-collegetours.png";
-    fileNames[4] = "partner-rentalbike.png";
-    fileNames[5] = "partner-tourgroup.png";
-
-    // Create image list
-    for(var i = 0; i < fileNames.length; i++) {
-
-        photos.push(
-            "<img src='partners/" + fileNames[i] + "'>"
-        );
-
-        image = openList + photos[i] + closeList;
-
-        imageList.push(image);
-    }
-
-    // Display all images
-    document.getElementById("partners").innerHTML = imageList.join("");
-
-</script>
+        
+        <script src="js/site_scripts.js"></script>
+<script src="js/randomcodes.js"></script>
 
 </html>

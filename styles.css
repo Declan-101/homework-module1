@@ -238,7 +238,7 @@
 
 /* Submit Button */
 #contact input[type="submit"] {
-    background-color: #4977D1;
+    /*background-color: #4977D1;*/
     color: #fff;
     border: none;
     padding: 12px 30px;
