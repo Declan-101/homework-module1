@@ -8,7 +8,7 @@
 
 
 </head>
-<body id="contact">
+<body id="contact" onLoad="disableButton(true);">
     <div id="container">
         <header>
            
@@ -86,12 +86,12 @@
 
     <!--Random Codes-->
     <div class="randomcode">
-        <input type="text" name="randomcode" placeholder="Enter characters">
+        <input type="text" id="codeentered" name="randomcode" placeholder="Enter characters">
         <p id="codes"></p>
     </div>
 
     <div class="button">
-       
+        <input type="submit" id="submit" value="Inquire">
     </div> 
 </fieldset>  
 </form>
@@ -136,6 +136,6 @@
         </footer>
         
         <script src="js/site_scripts.js"></script>
-<script src="js/randomcodes.js"></script>
+        <script src="js/randomcodes.js"></script>
 
 </html>
