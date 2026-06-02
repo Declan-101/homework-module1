@@ -381,3 +381,9 @@
     padding-bottom: 25px;
     color: #125688
 }
+
+.selected {
+    background-color: #9ed034;
+    color: white;
+    font-weight: bold;
+}
