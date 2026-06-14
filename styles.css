@@ -6,25 +6,26 @@
         }
         #home header {
             background: no-repeat lightgrey url('images/great cliffs.jpg');
-            background-size: 1500px;
+            background-size: cover;
             background-position: center;
         }
         #activities header {
             background: no-repeat lightgrey url('images/runfly.jpg');
-            background-size: 1500px;
+            background-size: cover;
             background-position: center;
         }
         #contact header {
             background: no-repeat lightgrey url('images/cliff_rock.jpg');
-            background-size: 1500px;
+            background-size: cover;
             background-position: center;
         }
         .main-header {
             background-color:rgba(225, 225, 225, 0.8);
-            width: 700px;
+            width: 90%;
+            max-width: 700px;
             margin: 2em auto 0 auto;
             min-height: 100px;
-            height: 100px;
+            height: auto;
         }
         .main-header .logo img {
             width: 100px;
@@ -78,17 +79,18 @@
             background-color: #4288c3;
         }
         section #partners {
-            width: 1200px;
-            padding: 2em 0 2em 0;
+            max-width: 1200px;
+            width: 100%;
+            padding: 2em 0;
             margin: 0 auto;
             text-align: center;
         }
         section #partners .partner {
-            display: inline-block;
-            margin: 0 0.75em;
-            padding: 1.3em 1.5em;
+            padding:1.3em 1.5em;
             background-color: #fff;
             border-radius: 50%;
+            text-align: center;
+            margin-bottom: 20px;
         }
         section #partners .partner img {
             width: 90px;
@@ -254,7 +256,7 @@
 
 #cliffs header {
     background: no-repeat lightgrey url('images/forest_cliff.jpg');
-    background-size: 1500px;
+    background-size: cover;
     background-position: center;
 }
 
@@ -415,4 +417,44 @@
 
 #activities main #displaySelected #sendinfo input[type="email"] {
     width: 200px;
+}
+
+@media (max-width: 991px){
+
+    .main-header{
+        height:auto;
+        padding:15px;
+    }
+
+    .main-menu{
+        margin-left:0;
+    }
+
+    .main-menu ul li{
+        float:none;
+        display:block;
+        line-height:40px;
+        border:none;
+        text-align:center;
+    }
+
+}
+
+@media (max-width: 576px){
+
+    main{
+        width:95% !important;
+    }
+
+    table{
+        width:100%;
+        display:block;
+        overflow-x:auto;
+    }
+
+    .cliff-gallery{
+        width:100%;
+        grid-template-columns:1fr;
+    }
+
 }

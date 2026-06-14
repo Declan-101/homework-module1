@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Introducing California's Greatest Cliffs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,14 +20,20 @@
                         <img src="images/great cliffs logo.jpg" alt="" width="125">
                     </div>
                     
-    <nav class="main-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cliffs.html">Cliffs</a></li>
-            <li class="active"><a href="activities.html">Activities</a></li>
-            <li><a href="contact.html">Contact</a></li>
+   <nav class="navbar navbar-expand-lg navbar-light main-menu">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+            <li class="nav-item active"><a class="nav-link" href="activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
     </div>
 </header>
         
@@ -97,7 +106,7 @@
 </div>
 </main>
             <section>
-                <ul id="partners">
+                <ul id="partners" class="row list-unstyled">
                     <!--<li class="partner">
                         <img src="partners/partner-bustour.png" alt="Bus Tour Partner">
                     </li>
@@ -134,9 +143,10 @@
             </div>
         </footer>
        
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/activity.js"></script>
 <script src="js/site_scripts.js"></script>
-        
 </body>
 </html>

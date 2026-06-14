@@ -3,7 +3,7 @@ var fileNames = [];
 var imageList = [];
 var image;
 
-var openList = "<li class='partner'>";
+var openList = "<li class='partner col-12 col-sm-6 col-md-4 col-lg-2'>";
 var closeList = "</li>";
 
 fileNames[0] = "partner-bustour.png";
