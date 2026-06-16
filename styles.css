@@ -21,11 +21,6 @@
         }
         .main-header {
             background-color:rgba(225, 225, 225, 0.8);
-            width: 90%;
-            max-width: 700px;
-            margin: 2em auto 0 auto;
-            min-height: 100px;
-            height: auto;
         }
         .main-header .logo img {
             width: 100px;
@@ -35,7 +30,7 @@
         }
         /* Navigation*/
         .main-menu {
-            margin-left: 225px;
+            margin-left: 0;
             font-weight: 400;
         }
         .main-menu ul li {
@@ -50,8 +45,7 @@
             font-size: 14px;
         }
         .main-menu ul li a {
-            text-decoration: none;
-            color: #888;
+           color:rgb(255,255,255);
         }
         .main-menu ul li a:hover {
             color: #9ed034;
@@ -457,4 +451,9 @@
         grid-template-columns:1fr;
     }
 
+}
+
+.navbar {
+    background-color: rgba(38, 41, 61, 0.7);
+    z-index: 1000;
 }
