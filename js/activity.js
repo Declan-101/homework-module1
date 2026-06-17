@@ -1,46 +1,40 @@
 $(document).ready(function () {
 
     $("tbody td").each(function () {
-
         if ($(this).text() !== "Not Available" && !$(this).is(":first-child")) {
             $(this).css("cursor", "pointer");
         }
-
     });
 
     $("tbody td").click(function () {
 
-    var content = $(this).text();
+        var content = $(this).text();
 
-    if (content !== "Not Available" && !$(this).is(":first-child")) {
+        if (content !== "Not Available" && !$(this).is(":first-child")) {
 
-        $(this).toggleClass("selected");
-
-        if ($(this).hasClass("selected")) {
-
-            $("#displaySelected").css("visibility", "visible");
-            $("#displaySelected").css("margin-top", "2em");
+            $(this).toggleClass("selected");
 
             var colIndex = $(this).index();
+            var cliffName = $("thead th").eq(colIndex).text();
+            var selectedText = content + " at " + cliffName;
 
-var cliffName = $("thead th").eq(colIndex).text();
+            if ($(this).hasClass("selected")) {
 
-$("#result").append(
-    "<p>" + content + " at " + cliffName + "</p>"
-);
+                $("#result").append("<p>" + selectedText + "</p>");
 
-        } else {
+            } else {
 
-            $("#result p:contains('" + content + "')").remove();
+                $("#result p").filter(function () {
+                    return $(this).text() === selectedText;
+                }).remove();
+            }
 
-            if ($("#result").has("p").length == false) {
-
-                $("#displaySelected").css("visibility", "hidden");
-                $("#displaySelected").css("margin-top", "0");
+            if ($("#result p").length > 0) {
+                $("#activityModal").modal("show");
+            } else {
+                $("#activityModal").modal("hide");
             }
         }
-    }
-
-});
+    });
 
 });

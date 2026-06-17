@@ -49,3 +49,5 @@ function evaluateCode() {
         disableButton(false);
     }
 }
+
+disableButton(true);
